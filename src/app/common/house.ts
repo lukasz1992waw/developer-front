@@ -7,3 +7,4 @@ export class House {
     price: number;
     active: boolean;
 }
+
