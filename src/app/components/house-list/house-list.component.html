@@ -1,0 +1,29 @@
+<table class="table">
+
+    <thead class="thead-dark">
+        <tr>
+            <th></th>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Area</th>
+            <th>Price</th>
+            <th>Floors</th>
+            <th>Active</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let tempHouse of houses">
+            <td class="align-middle">
+                <img src="{{ tempHouse.imageUrl }}" height="50" />
+            </td>
+            <td class="align-middle">{{ tempHouse.number}}</td>
+            <td class="align-middle">{{ tempHouse.name}}</td>
+            <td class="align-middle">{{ tempHouse.area}}</td>
+            <td class="align-middle">{{ tempHouse.price | currency:'PLN'}}</td>
+            <td class="align-middle">{{ tempHouse.floors }}</td>
+            <td class="align-middle">{{ tempHouse.active }}</td>
+        </tr>
+
+    </tbody>
+</table>
